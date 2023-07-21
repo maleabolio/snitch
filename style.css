@@ -1,0 +1,77 @@
+.background-container {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 120vw;
+    height: 50vw;
+    background-image: linear-gradient(340deg, #ccefe8 0, #caefec 3.57%, 
+    #c9efef 7.14%, #c9eff2 10.71%, #c9eff5 14.29%, #caeef8 17.86%, 
+    #cbeefa 21.43%, #cdedfc 25%, #d0ecfe 28.57%, #d3ebff 32.14%,
+    #d6eaff 35.71%, #dae9ff 39.29%, #dee8ff 42.86%, #e2e7ff 46.43%, 
+    #e6e6ff 50%, #eae5fe 53.57%, #eee4fc 57.14%, #f2e3fa 60.71%, 
+    #f5e2f7 64.29%, #f9e1f5 67.86%, #fbe1f2 71.43%, #fee0ee 75%, 
+    #ffe0eb 78.57%, #ffe0e8 82.14%, #ffe0e5 85.71%, #ffe0e1 89.29%, 
+    #ffe0de 92.86%, #ffe0db 96.43%, #ffe1d8 100%);
+    background-size: 180% 180%;
+    background-position: center;
+    animation: gradient 2s ease infinite;
+}
+
+.div-background-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.content-container {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.snitch {
+    width: 400px;
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;
+}
+
+.drop {
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+@keyframes float {
+    0% {
+        filter: drop-shadow 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translatey(0px);
+    }
+
+    50% {
+        filter: drop-shadow 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        filter: drop-shadow 0 5px 15px 0px rgba(0, 0, 0, 0.4);
+        transform: translately(0px);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
